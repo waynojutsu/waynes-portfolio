@@ -1,0 +1,34 @@
+[hidden] { display: none !important; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--skin-color); outline-offset: 4px; }
+.aside .logo a { letter-spacing: 3px; }
+.aside .nav { max-height: min(60vh, 620px); overflow: auto; width: 85%; margin-inline: auto; }
+.aside .nav a { overflow-wrap: anywhere; }
+.home .row { align-items: center; }
+.home .home-img { display: block; margin: 32px 0; }
+.home .home-img img { width: min(100%, 310px); height: auto; display: block; }
+.home .home-img::before { left: 0; top: -20px; }
+.home .home-img::after { right: 0; bottom: -20px; }
+@media (max-width: 990px) {
+  .home .home-img { width: min(100%, 340px); max-width: none; flex-basis: auto; margin-inline: auto; }
+}
+.home h1.hello { font-size: 28px; margin: 15px 0; }
+.home h1.hello span { font: 700 46px "Clicker Script", cursive; color: var(--skin-color); }
+.home h2.my-profession { font-size: clamp(25px, 4vw, 30px); margin: 15px 0; }
+.home-info p { margin-bottom: 34px; font-size: clamp(17px, 2.5vw, 20px); }
+.project-tile { display: block; height: 100%; }
+.project-tile p + p { margin-top: 8px; }
+.document-links { display: grid; gap: 12px; }
+.document-links a { color: var(--text-black-900); text-decoration: underline; text-underline-offset: 4px; }
+.style-switcher .colors button { width: 28px; height: 28px; border-radius: 50%; border: 1px solid transparent; cursor: pointer; }
+@media (max-width: 1190px) {
+  .section .container { padding-top: 100px; }
+  .aside .nav-toggler.open { left: min(275px, calc(100vw - 48px)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+.certificate-image { display: block; width: min(100%, 740px); height: auto; margin-top: 14px; border: 1px solid var(--bg-black-50); border-radius: 5px; }
+.process-note { max-width: 65ch; margin-top: 30px; font-size: .9rem; color: var(--text-black-700); }
+.aside .logo { width: calc(100% - 34px); text-align: center; }
+.aside .logo a { display: inline-block; padding-inline: 10px; font-size: 19px; letter-spacing: 0; }
+body.dark { color-scheme: dark; background: var(--bg-black-900); }
